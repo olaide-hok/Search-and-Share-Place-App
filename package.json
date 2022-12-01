@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "keywords": [
     "typescript",
@@ -14,14 +15,19 @@
   "author": "Habeeb Kareem",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/googlemaps": "^3.38.0",
+    "babel-loader": "^9.1.2",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.2",
-    "webpack": "^4.41.2",
+    "webpack": "^4.46.0",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "axios": "^1.2.2",
-    "npm": "^9.2.0"
+    "axios": "^0.19.0"
   }
 }
